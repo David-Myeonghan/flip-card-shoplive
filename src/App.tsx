@@ -1,24 +1,13 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Swipe from './Swipe';
+
+const FIRST_COLOR_LIST = ['red', 'orange', 'green', 'blue'];
+const SECOND_COLOR_LIST = ['indigo', 'purple'];
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Swipe style={{ width: '380px', height: '60px', backgroundColor: 'red' }} colorList={FIRST_COLOR_LIST} />
     </div>
   );
 }
